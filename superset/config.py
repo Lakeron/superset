@@ -1256,3 +1256,18 @@ elif importlib.util.find_spec("superset_config") and not is_test():
     except Exception:
         logger.exception("Found but failed to import local superset_config")
         raise
+
+
+MENU_ANNOUNCEMENT_DATA = {
+    'active': True,
+    'cookie_id': 'data-survey',
+    'confirmButtonName': 'Yes, I want to help',
+    'cancelButtonName': 'No, I just want your data',
+    'title': 'Do you have 8 minutes?',
+    'descriptionHtml': "<p>This is usually the other way around, but this time, it would be us who has a \"Data Request\".</p><p>We are constantly trying to improve and adapt our internal data tooling for our future needs. To find out where we currently stand, we created a short survey (8 min) to learn more about your relationship with Slido data, how do you like our current data stack and what we could improve for the future.</p><p>Please feel free to be brutally honest -- there is nothing worse than data you can't trust.</p><p>Thank you!</p>",  # noqa
+    'gifData': {
+        'path': '/static/assets/images/help-me-help-you.gif',
+        'alt': 'help me help you',
+        'width': 615,
+    }
+}

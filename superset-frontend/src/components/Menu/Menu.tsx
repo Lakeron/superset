@@ -28,6 +28,7 @@ import Icons from 'src/components/Icons';
 import RightMenu from './MenuRight';
 import { Languages } from './LanguagePicker';
 import { URL_PARAMS } from '../../constants';
+import MenuAnnouncement from './MenuAnnouncement';
 
 interface BrandProps {
   path: string;
@@ -254,6 +255,7 @@ export function Menu({
 
               return renderSubMenu(props);
             })}
+            <MenuAnnouncement />
           </DropdownMenu>
         </Col>
         <Col md={8} xs={24}>
