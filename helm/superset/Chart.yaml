@@ -25,10 +25,10 @@ maintainers:
 version: 0.3.7
 dependencies:
 - name: postgresql
-  version: 10.2.0
+  version: 11.9.6
   repository: https://charts.bitnami.com/bitnami
   condition: postgresql.enabled
 - name: redis
-  version: 12.3.3
+  version: 17.3.2
   repository: https://charts.bitnami.com/bitnami
   condition: redis.enabled
